@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.example.tamaskozmer.kotlinrxexample"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "com.example.tamaskozmer.kotlinrxexample.testutil.CustomTestRunner"
@@ -53,7 +53,7 @@ task ktlintFormat(type: JavaExec, group: "formatting") {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     implementation "com.google.dagger:dagger:$DAGGER_VERSION"
     implementation "com.google.dagger:dagger-android:$DAGGER_VERSION"
